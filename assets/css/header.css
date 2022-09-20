@@ -1,0 +1,117 @@
+.websiteHomeHeader {
+    background-image: url(../img/fondo1.jpg);
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Playfair Display";
+    line-height: 1.2;
+    font-size: clamp(44px,26.1090909091px + 3.7272727273vw,76.8px);
+}
+.websiteDecoration--middle {
+    background-image: url(https://cdn1.bodas.net/assets/img/wedsites/hero/seafoam-braid-bg-middle.png);
+}
+@media screen and (min-width: 48em) {
+    .websiteDecoration--hero { background-image: url(https://cdn1.bodas.net/assets/img/wedsites/hero/seafoam-braid-bg.png); }
+}
+@media screen and (max-width: 48em) {
+    .websiteDecoration--hero { background-image: url(https://cdn1.bodas.net/assets/img/wedsites/hero/mobile/seafoam-braid-bg.png); }
+}
+@media screen and (min-width: 48em) {
+.websiteDecoration--top { background-image: url(https://cdn1.bodas.net/assets/img/wedsites/hero/seafoam-braid-bg-small.png); }
+}
+@media screen and (max-width: 48em) {
+.websiteDecoration--top { background-image: url(https://cdn1.bodas.net/assets/img/wedsites/hero/mobile/seafoam-braid-bg.png); }
+}
+
+/* Website */
+
+.horario{
+
+    padding-right: 107px;
+   
+}
+
+@media screen and (min-width: 48em) {
+
+.horario{
+
+    padding-right: 0px;
+    
+}
+}
+
+/* IPHONE 13 mini */
+
+/* 2340x1080 pixels at 476ppi */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+        .horario{
+
+            padding-right: 0px;
+
+            
+        }
+    }
+
+
+/* IPHONE 13 and 13 pro */
+
+/* 2340x1080 pixels at 476ppi */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        .horario{
+
+            padding-right: 0px;
+
+            
+        }
+    }
+
+/* IPHONE 13 PRO MAX */
+
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        .horario{
+
+            padding-right: 0px;
+
+        }
+    }
+
+    /* iphone 11 */
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+        .horario{
+
+            padding-right: 0px;
+
+            
+        }
+    }
+
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .horario{
+
+            padding-right: 0px;
+
+            
+        }
+    }
