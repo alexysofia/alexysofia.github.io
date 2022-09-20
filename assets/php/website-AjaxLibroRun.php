@@ -1,1 +1,0 @@
-{"errCode":2,"message":"Tu nombre tiene que tener como m\u00ednimo 3 caracteres.","name":"nombre"}
