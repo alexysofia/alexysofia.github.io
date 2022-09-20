@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="es-ES" prefix="og: http://ogp.me/ns#">
+<html lang="es-ES">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="public">
     <title>Alérgenos - Alejandro & Sofía</title>
     <meta
       name="description"
@@ -9,15 +9,13 @@
     />
     <meta name="keywords" content="Alérgenos, Alejandro &amp; Sofía" />
     <meta name="viewport" content="" />
-    <meta name="robots" content="NOINDEX,NOFOLLOW" />
-    <meta name="pbdate" content="9:04:29 20/09/2022" />
+
     <link
       rel="shortcut icon"
       href="https://www.bodas.net/mobile/assets/img/favicon/favicon.png"
     />
 
-    <meta property="fb:pages" content="60558433839" />
-    <meta property="fb:app_id" content="127038310647837" />
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Alejandro &amp; Sofía" />
     <meta
@@ -78,81 +76,7 @@
     <span class="ot-sdk-show-settings" style="display: none"></span>
     <!-- <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-language="es-ES" data-domain-script="4354ed50-c10d-4696-9216-1186021c8d0c" data-ignore-ga='true' defer></script>
             <script>var isCountryCookiesActiveByDefault=false,CONSENT_ANALYTICS_GROUP="C0002",CONSENT_PERSONALIZATION_GROUP="C0003",CONSENT_TARGETED_ADVERTISING_GROUP="C0004",CONSENT_SOCIAL_MEDIA_GROUP="C0005",cookieConsentContent='',hideCookieConsentLayer= '', OptanonAlertBoxClosed='';hideCookieConsentLayer=getCookie('hideCookieConsentLayer');OptanonAlertBoxClosed=getCookie('OptanonAlertBoxClosed');if(hideCookieConsentLayer==="1"||Boolean(OptanonAlertBoxClosed)){cookieConsentContent=queryStringToJSON(getCookie('OptanonConsent')||'');}function getCookie(e){var o=document.cookie.match("(^|;)\\s*"+e+"\\s*=\\s*([^;]+)");return o?unescape(o.pop()):null}function queryStringToJSON(e){var o=e.split("&"),t={};return o.forEach(function(e){e=e.split("="),t[e[0]]=decodeURIComponent(e[1]||"")}),JSON.parse(JSON.stringify(t))}function isCookieGroupAllowed(e){var o=cookieConsentContent.groups;if("string"!=typeof o){if(!isCountryCookiesActiveByDefault && e===CONSENT_ANALYTICS_GROUP && getCookie('hideCookieConsentLayer')==="1"){return true}return isCountryCookiesActiveByDefault;}for(var t=o.split(","),n=0;n<t.length;n++)if(t[n].indexOf(e,0)>=0)return"1"===t[n].split(":")[1];return!1}function userHasAcceptedTheCookies(){var e=document.getElementsByTagName("body")[0],o=document.createEvent("HTMLEvents");cookieConsentContent=queryStringToJSON(getCookie("OptanonConsent")||""),!0===isCookieGroupAllowed(CONSENT_ANALYTICS_GROUP)&&(o.initEvent("analyticsCookiesHasBeenAccepted",!0,!1),e.dispatchEvent(o)),!0===isCookieGroupAllowed(CONSENT_PERSONALIZATION_GROUP)&&(o.initEvent("personalizationCookiesHasBeenAccepted",!0,!1),e.dispatchEvent(o)),!0===isCookieGroupAllowed(CONSENT_TARGETED_ADVERTISING_GROUP)&&(o.initEvent("targetedAdvertisingCookiesHasBeenAccepted",!0,!1),e.dispatchEvent(o)),!0===isCookieGroupAllowed(CONSENT_SOCIAL_MEDIA_GROUP)&&(o.initEvent("socialMediaAdvertisingCookiesHasBeenAccepted",!0,!1),e.dispatchEvent(o))}</script> -->
-    <script>
-      function CMP() {
-        var body = document.getElementsByTagName("body")[0];
-        var event = document.createEvent("HTMLEvents");
-        var callbackIAB = (tcData, success) => {
-          if (
-            success &&
-            (tcData.eventStatus === "tcloaded" ||
-              tcData.eventStatus === "useractioncomplete")
-          ) {
-            window.__tcfapi("removeEventListener", 2, () => {}, callbackIAB);
-            if (
-              (typeof window.Optanon !== "undefined" &&
-                !window.Optanon.GetDomainData().IsIABEnabled) ||
-              (tcData.gdprApplies &&
-                typeof window.Optanon !== "undefined" &&
-                window.Optanon.GetDomainData().IsIABEnabled &&
-                getCookie("OptanonAlertBoxClosed"))
-            ) {
-              userHasAcceptedTheCookies();
-            }
-            if (isCookieGroupAllowed(CONSENT_ANALYTICS_GROUP) !== true) {
-              event.initEvent("analyticsCookiesHasBeenDenied", true, false);
-              body.dispatchEvent(event);
-            }
-            if (
-              isCookieGroupAllowed(CONSENT_TARGETED_ADVERTISING_GROUP) !== true
-            ) {
-              event.initEvent(
-                "targetedAdvertisingCookiesHasBeenDenied",
-                true,
-                false
-              );
-              body.dispatchEvent(event);
-            }
-            if (
-              tcData.gdprApplies &&
-              typeof window.Optanon !== "undefined" &&
-              window.Optanon.GetDomainData().IsIABEnabled
-            ) {
-              event.initEvent("IABTcDataReady", true, false);
-              body.dispatchEvent(event);
-            } else {
-              event.initEvent("nonIABCountryDataReady", true, false);
-              body.dispatchEvent(event);
-            }
-          }
-        };
-        var cnt = 0;
-        var consentSetInterval = setInterval(function () {
-          cnt += 1;
-          if (cnt === 600) {
-            userHasAcceptedTheCookies();
-            clearInterval(consentSetInterval);
-          }
-          if (
-            typeof window.Optanon !== "undefined" &&
-            !window.Optanon.GetDomainData().IsIABEnabled
-          ) {
-            clearInterval(consentSetInterval);
-            userHasAcceptedTheCookies();
-            event.initEvent("oneTrustLoaded", true, false);
-            event.initEvent("nonIABCountryDataReady", true, false);
-            body.dispatchEvent(event);
-          }
-          if (typeof window.__tcfapi !== "undefined") {
-            event.initEvent("oneTrustLoaded", true, false);
-            body.dispatchEvent(event);
-            clearInterval(consentSetInterval);
-            window.__tcfapi("addEventListener", 2, callbackIAB);
-          }
-        });
-      }
-      CMP();
-    </script>
+ 
   </head>
   <body
     class="websites websitePageContactUs"
@@ -412,21 +336,6 @@
                             class="app-website-contact-form"
                             action="mailto:sofiayalejandro3@gmail.com"
                           >
-                            <input
-                              type="hidden"
-                              name="token"
-                              value="NmZhYTBlMTRmNjNkMTFjMjVkY2M0NDlmYTA5NmZmNzk="
-                            />
-                            <input
-                              type="hidden"
-                              name="idUser"
-                              value="6283113"
-                            />
-                            <input
-                              type="hidden"
-                              name="isJsArchitectureEnabled"
-                              value="true"
-                            />
                             <div class="websiteTextfield textfield">
                               <input
                                 class="textfield__input"
@@ -469,60 +378,7 @@
                               ></textarea>
                             </div>
 
-                            <div
-                              class="app-captcha js-recaptcha--hidden formControl--error"
-                            >
-                              <div
-                                id="captcha_0"
-                                class="g-recaptcha app-captcha-send-message app-captcha-send-message app-textfield-validate websiteTextfield mb20"
-                                name="recaptcha"
-                                data-sitekey="6LfaEqcUAAAAAIEGeAqlI36kypqW0fxsC4wq2nyZ"
-                                data-msgerror="Verificación incorrecta. Por favor, inténtalo de nuevo."
-                              ></div>
-                              <div
-                                class="formControl__hint js-recaptcha__hint"
-                                id="name"
-                              >
-                                Verificación incorrecta. Por favor, inténtalo de
-                                nuevo.
-                              </div>
-                            </div>
-                            <div
-                              class="app-website-legal-policies websiteLinkChilds--underline"
-                            >
-                              <div
-                                class="app-website-legal app-textfield-validate websiteTextfield textfield textfield__checkbox textfield--block"
-                              >
-                                <label class="flex pointer">
-                                  <div
-                                    class="toggleCheck toggleCheck--outlined"
-                                  >
-                                    <input
-                                      class="app-not-icheck app-website-legal-check"
-                                      type="checkbox"
-                                      name="termscheck"
-                                      value="1"
-                                    />
-                                    <span class="toggleCheck__checkmark"></span>
-                                  </div>
-                                  <span class="textfield__formLabel">
-                                    Acepto las
-                                    <a
-                                      href="https://www.bodas.net/condiciones-legales.php"
-                                      target="_blank"
-                                      >condiciones de uso</a
-                                    >
-                                    y la
-                                    <a
-                                      href="https://www.bodas.net/legal/privacy.php"
-                                      target="_blank"
-                                      >política de privacidad</a
-                                    >
-                                    de Bodas.net.
-                                  </span>
-                                </label>
-                              </div>
-                            </div>
+
                             <button
                               class="app-website-contact-send app-contrast-color btnFlat btnFlat--full mt5"
                               data-color="secondaryColorBtnFlat"
@@ -637,78 +493,8 @@
             src="https://www.bodas.net/builds/desktop/js/symfnw-ES171-1-20220919-002_www_m_/UserBundleCommonWebsitesPublic.js"
           ></script>
 
-          <script>
-            (function (w) {
-              w.desktopInMobile = "0";
-            })(window);
-          </script>
 
-          <script>
-            (function (i, r) {
-              i[r] =
-                i[r] ||
-                function () {
-                  (i[r].q = i[r].q || []).push(arguments);
-                };
-            })(window, "ga");
-            var analyticsManager = (function () {
-              var _storedAnalyticsEvents = [];
-              function queueEvent(func) {
-                if (!!window.ga && !!ga.create) {
-                  func();
-                } else {
-                  _storedAnalyticsEvents.push(func);
-                }
-              }
-              function trackQueuedEvents() {
-                while (_storedAnalyticsEvents.length > 0) {
-                  var queuedEvent = _storedAnalyticsEvents.shift();
-                  queuedEvent();
-                }
-              }
-              return {
-                queueEvent: queueEvent,
-                trackQueuedEvents: trackQueuedEvents,
-              };
-            })();
-          </script>
-          <script>
-            var universalAnalyticsScript = function (i, s, o, g, r, a, m) {
-              i["GoogleAnalyticsObject"] = r;
-              i[r].l = 1 * new Date();
-              (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-              a.defer = 1;
-              a.onload = analyticsManager.trackQueuedEvents;
-              a.src = g;
-              m.parentNode.insertBefore(a, m);
-            };
-            document.addEventListener("DOMContentLoaded", function () {
-              document
-                .getElementsByTagName("body")[0]
-                .addEventListener(
-                  "analyticsCookiesHasBeenAccepted",
-                  function () {
-                    universalAnalyticsScript(
-                      window,
-                      document,
-                      "script",
-                      "//www.google-analytics.com/analytics.js",
-                      "ga"
-                    );
-                  }
-                );
-              if (isCookieGroupAllowed(CONSENT_ANALYTICS_GROUP) === true) {
-                universalAnalyticsScript(
-                  window,
-                  document,
-                  "script",
-                  "//www.google-analytics.com/analytics.js",
-                  "ga"
-                );
-              }
-            });
-          </script>
-          <script>
+          <!-- <script>
             ga("create", "UA-3715104-1", "auto");
             ga("set", "dimension1", "no_logado");
             ga("set", "dimension4", "no_logado");
@@ -740,10 +526,10 @@
               ga("set", "dimension7", clientId);
             });
             ga("send", "pageview");
-          </script>
-          <script class="app-ecommerce-script">
+          </script> -->
+          <!-- <script class="app-ecommerce-script">
             parent.ga("require", "ec");
-          </script>
+          </script> -->
           <script class="app-ecommerce-script">
             try {
               parent.ga(
@@ -757,7 +543,7 @@
             var reduced = "/website/public";
           </script>
 
-          <script>
+          <!-- <script>
             var _comscore = _comscore || [];
 
             var comscoreScript = function () {
@@ -789,9 +575,9 @@
             if (isCookieGroupAllowed(CONSENT_ANALYTICS_GROUP) === true) {
               comscoreScript();
             }
-          </script>
+          </script> -->
 
-          <script>
+          <!-- <script>
             !(function () {
               var segmentLoaded = false;
               !(function () {
@@ -894,7 +680,7 @@
                 segmentScript();
               }
             })();
-          </script>
+          </script> -->
 
           <script>
             window.reducedUrl = "/website/public";
@@ -940,7 +726,7 @@
                 send_to: "adwords",
               });
             </script>
-            <script>
+            <!-- <script>
               var facebookScript = function (f, b, e, v, n, t, s) {
                 if (f.fbq) return;
                 n = f.fbq = function () {
@@ -1012,8 +798,8 @@
                 );
                 toExecuteAfterFbInit();
               }
-            </script>
-            <script>
+            </script> -->
+            <!-- <script>
               var pinterestScript = function () {
                 !(function (e) {
                   if (!window.pintrk) {
@@ -1076,7 +862,7 @@
               ) {
                 pinterestScript();
               }
-            </script>
+            </script> -->
           </div>
         </div>
       </div>
